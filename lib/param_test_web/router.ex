@@ -7,5 +7,6 @@ defmodule ParamTestWeb.Router do
 
   scope "/api", ParamTestWeb do
     pipe_through :api
+    get("/things", ThingController, :index)
   end
 end
